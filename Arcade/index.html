@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="index.css">
+<link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <h1>TIC-TAC-TOE</h1>
+    <nav class="navBar">
+        <a href="home.html">HOME</a>
+    </nav>
+    <p id="rules">Enter your name on the left. Player one moves first and 
+        will be 'X', player two will be 'O'</p>
+    <p id="playerOneName">Player One: </p>
+    <p id="playerTwoName">Player Two: </p>
+    
+    <table id="board">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <div>
+        <button id="newGameBtn">New Game</button>
+    </div>
+    <div>
+        <button id="computerBtn">you vs pc</button>
+    </div>
+    
+    <a href="https://lh3.googleusercontent.com/LFV8vcNr9sKxM7gueKp8v3CXWp0Vza9yRWDeCOAuNSPxi2sZORUHT86UFmavq3qMA5_lCnfUmpL0EZM2lZNcuo5mwTWKFb0GxZYCYwNncT6DUkQ08qXZVJ3WGNFktAJWRZiAew4XPg=w2400?source=screenshot.guru">
+      <img class="mountainImg" src="https://lh3.googleusercontent.com/c72PKj7SNZKPK4EuSvwjpoTitjioWGegQZOIf1U2whbQC1zcCGOkbTcpYkVDGVTSrgrH6jIGbFMr2V7jsUfqrfCUwh1QjRyVmaxqBQUQdAvTaeGUATxAdz7l8moO0y9UeHLvHwPiKonoM7R4FSyw1UoaqRkQ-oKKeBKQW5UmFCbC9EfagnXBRtqIcrAgD1NrPfb43Yj2FP_YfOdnV0cajexcQgwqO51g8WW4KETFtZyELOpn0ebaiDg7PgO7fe3fwMglKGtOvIVbYmGHPlcOxlWq3TvqBV_JDPbMi59h0FwsdvvLKPp7DAzF_qFONk5DRXvAMdJUhqtkW5aZXCRLOL2pVOB65eUaHhA-hXl2Emjq_5sz9hHrV6TFGteweyDeJwG6JwOkFX_PcTwRFRFeOvq_DLL1I6UgCIJrPAYQNsd3iTnPNWzMVML9BUiFoEwWtlsy4VwfRomYk8lS9ml67H4E6zwhrwR8RFwMlPsW2la8iMCziaYk6qgDi2MJqzFWOVC66N6FtuyK4xuHAaih74itXQesOZlVj0G9XC0Eg_Cbq3kISCRtlnzy9RBFELulTq5q3q18LkrPIQ3AYnadSIvqfgjfKeXyamwDjHJkXkRJXTpysw2O5FjgtXqB443duNeFAiVO9FnM70Vc7UbKdmVml-lA1bv-Ob9y2lUFigCIptt3ZjGYA3rml4IYrB3-LFlDZK8UO5fE_NwdtACSl7SPFtHOzsySHikTfJzra72sI4V67XhRD2EBF5RvDmGg2k_XCFWRWcgEQvZFJCT_6bcfoDo-OTWElOfZMVWkbbePp4BQuHOq9T9WZhX9kUxjflZqpbI_i5iw4jbgIV8jBNfYQEZyEC4BR74APj7EngoI8Iq7LxLeopq-5MeByU9QWnEc_O7iacC1UvdWmDOr2B_UmB9CRHKKOI3aWhtCQ451=s1508-no?authuser=0" /> </a>
+      <a href="https://lh3.googleusercontent.com/LFV8vcNr9sKxM7gueKp8v3CXWp0Vza9yRWDeCOAuNSPxi2sZORUHT86UFmavq3qMA5_lCnfUmpL0EZM2lZNcuo5mwTWKFb0GxZYCYwNncT6DUkQ08qXZVJ3WGNFktAJWRZiAew4XPg=w2400?source=screenshot.guru">
+          <img class="moonImg" src="https://lh3.googleusercontent.com/CPXzZ1GuaPDKj3xeUfmoO6DfbCLyKSF6cCaze60PRoWIn-YYA39WJtzdUQCwGAqDX7ip2cbUFOt_KNtru7s6eYB_K23F3YRwIACe4ncppaMrxcD-a8lMW83wBOoqZimtASXuYoyRxI79P54qgITk68EoWGv2dPFgLO5ma7Z54PIEUzi6yJW6N2gNWSY_yBravt__M8SIbyYKwl8cxfl8QsFD_omQ0YPj_iIMjZVcZsW04SiX1ztM2FNsEzxZUfgLn72_lOIun2s3aPYEq0mTr-GrUoXOtP-oi5zBdSh7SqCIG7oMi6EvRTMuDBBgEzkv_PShpBI2Rujm3sSVEcx8i8hpuZrbmIAL1Tex_0Wp9L_jCi4lhg-9sfRepE9VOKjC7KNqaaYWhaBEYqjGTeAjbz7TLYOxotimjGFmRhLcLNhrfNBK1w3_0JRXgr6aZiAqp07OfSc7rrQtSUi9TYxkWwoWOfaS79cVH1apNjTDugVYLSFe23Koe2r0uKT2i2orakyjUSF9Ql5-EvQ62YhsAJw8ig2hLxzhAYnwPGNUbl0SVhgJ0q3MuPlTIv65_fD_rwnXFmxgGevPtyAKPzI3j7QGx33zIBpnQB0-fsYRYlKm6Xb_MCzCZobfGcKBzTiMkEgYiIRrFIZayzJxuzKHapveGSmi_iKj1kbKcQhbjeTUlHJqXWKKrdYYR0ltyaKNle1y0_Wt8vErJNBy9153SZW3UiwOqezIxrVXNc5gdCXN2Od9GOAUMLwZvUXnSNx5ujemV-fSVAPsbwTaHDeOllIDNE7G7GdckEOnNRw1_svozkeMhw_Ya-SyWROdCAFKtzQiHd5dz5uHLZMvshH9i_CUalgyHhQUSAcNWX-uRBnAYWc4fAPWdIRRV32rgoePkv94UwnPWh-j5wm-DyEzhL2YWvsVwZNHCpDehBLwZtCq=s1508-no?authuser=0" /> </a>
+    <script type="text/javascript" src="/index.js"></script>
+    <a href="https://lh3.googleusercontent.com/LFV8vcNr9sKxM7gueKp8v3CXWp0Vza9yRWDeCOAuNSPxi2sZORUHT86UFmavq3qMA5_lCnfUmpL0EZM2lZNcuo5mwTWKFb0GxZYCYwNncT6DUkQ08qXZVJ3WGNFktAJWRZiAew4XPg=w2400?source=screenshot.guru">
+        <img class="jacketImg" src="https://lh3.googleusercontent.com/6qT0toRkYsNh7C-qfNHsIxefcYdi1wi8Tuyj54pOA7B_XFlNW_lqEV6LKikf-R7NDSMcd7yNI79FRiL5z53nAiI0Z81xyDcAR3fPvG5rQY0ODMcwAWgtmXPncuvNp7dDcwOGaFnNMY7LoOH_Krct2go111O5zw_94MOKRiryHfaovit-cX_0sTXh-_TJ232-Tvgg_LwoYmfhckc7b3jt0VstXpS971ojQRALAc-MjNPxogHHRF6lzl9phpY6gxLx5ZeJMOOiAGGG3SD14DVey3J6qFXF2-zPGngl7_0u_eHi9dtl73n2CNDxt9ovouk1Nk4GLKBGzRJu07l6ps0WFEVqKxhkt7-D_9HFkOFbzqpIumtcgabvSAQHqUB5-7cQxZL5qhzR4KIkwCXkkkc-FE5oFoM05v-NvrzQQsHNfcYpAISju8-WkbY1wvTBVDGRBhkzXpXGARttmPG-awyx4Nc4CnG8--bcHqPkLq4HDf2XvTnjtH7zS-oEVKHv1Fcqr9AypBkCIV6ITRNV-nuX3NjAIKaKf0LueKAtIt-I7ihWyD7iRK3JNpWc-ErQvryOmygk6Kw4muKmTPQ-wtKa7RjpibSDgBsUCdXnodw-eiFAy_n7EZeIdrTdpJDIzWAIBRb7A_oXgxkuUrIbnNODv-moLTyhbimz90o3EW1rVyXlYlCc_NM2YUX4oO9cPGhxD_nNP6M9X1dSLulh4CE9sBWQ18gJ7Pt1hkN9wmRlgu_farMH293qyyliTGcKE5i2EmWzVgj41coy0QtMlN-32AuhG-LnjkQZpML0fQjCjQHcJzSQR3x8SH5vidFjlx32Tkd0HIGXfJpDoxylzX47-NWXyIlhcj9-zfm5Qv6Pz56Mlfff9eyNUP2pTkCV3fpxjk5-XZBM3bBam9XkYJrORhPkw3-u2GXGZCv1_q_lEZyXYuBX=s1528-no?authuser=0" /> </a>
+
+        <a href="https://lh3.googleusercontent.com/LFV8vcNr9sKxM7gueKp8v3CXWp0Vza9yRWDeCOAuNSPxi2sZORUHT86UFmavq3qMA5_lCnfUmpL0EZM2lZNcuo5mwTWKFb0GxZYCYwNncT6DUkQ08qXZVJ3WGNFktAJWRZiAew4XPg=w2400?source=screenshot.guru">
+            <img class="head2Img" src="https://lh3.googleusercontent.com/tcdzgecfOnvMXhaBOXDRZucCv6xWssZwix6CZ71LaBwaTr4-cKxZBi1HG_RlxCy6hq2aZe-oJZIEiavNdUOWx_Rduqy_KBrY5e1m_hPr0VhwP_5Skwcp5seHQ0qtp2AVZ07GJ-llxRoyo03eMWfa6c57UIXEXdG-A7HML59vmRsuOeditRzDCdknMubaYYfKUUYgvQgRn6Us0pEfzAVS804LDmALZouXKLAingviz5lHSMDlxR65_OS2xtFsqMfmgQrVH_KyAr7Q8NZLeGdF1ANCnn6eLvGq1v-J6Ls57EpA5q-G9Aw5g1Bv3CqVjPt9VmdNc5YVr-A3jrVsEpc1e4yHvbbp4bNK_2xWy8mPV_D8_ftXFpL4lyzxSpQZv1wmCR6JlaPtdpkmz66-0oxph1SL0ObENm4GcLKI0xpb5tjwzfn0x-cfCEUKMY5cEko47pkAF22x6oxcAC68o9gX8x8fJspQ_ghQQ0PEq2UF4eei6y0YgsVdZg7NLu-C_U2oJWJtqQA_oxIKjbE8p--IYCHv68F4jw8YZeBjVKnd1JXIHJ_0VprFVfmmLBNnVUrTLw-C6ysSnMUghZApnfzEqTwyWZEfswPNz4MT_VRYbviC-2Bv4RlvVq22XIxmjpA-lAjU2FL5T3jLj9vvqgdm2AmivDVB5TdgX_WSDuFlU1Jzap67aCZiKfGQFD9SkBcXEB02G1wSSBpzJQ8klnBIHPPi92o7IMl3Lf8EBhwuN6bm5X3ZlN5DEX1Ht1sTMs9a2Npnll8VZ8nbplYOseyHJtTq2Ld0KkDf5Rvh8rARWXzaBE5HvnNXP7tmcrdLoMTjnKlo8Z1zWDZ5psFJLZ2_Ual0Lb48CjskvLs4VskIEqwkz_yPK3BtMlyCj2huB8YvwTSVZUtNbjcStidGEZU5It-ch99u2X1UGXem-wbXFXrm8aae=s1528-no?authuser=0" /> </a>
+
+            <a href="https://lh3.googleusercontent.com/LFV8vcNr9sKxM7gueKp8v3CXWp0Vza9yRWDeCOAuNSPxi2sZORUHT86UFmavq3qMA5_lCnfUmpL0EZM2lZNcuo5mwTWKFb0GxZYCYwNncT6DUkQ08qXZVJ3WGNFktAJWRZiAew4XPg=w2400?source=screenshot.guru">
+                <img class="gogglesImg" src="https://lh3.googleusercontent.com/AB_ltjnV1NQ0TRQZlpfNftZZRsALnBPSNRyUhKM2_bclbmWUBeK8yWEfbLMgrUhfoZXwZhWXyy-RaiDAq6NJTCmHNz0V-8iG9tpS0O1HoZ9QPpI9KUxBAl9n6N-WEYM5BI7zZIxPjNut5D-9ZkW_vKUpGUc1zbmFf9CkXChsCs_kZYXzPn_ymspo101xWOagdMCpGe1_mT_iMAk0ks6m-pB57efS0ZWjFut83iceuCPT-2FgNpfaDeEOyJV4XH8cko3nJ6EN9vsXoA-idfcXGu9hoKu6mJ5CQlS4iG-ad7QiiLuMfqWE-dDxejEu1MkNodH7wCLHJz9X7lLCK3HZXstM7Xu21Yxp_QINyPNvpDnTHmE3lzfMDbk4M7uIELKwTKx7lqOgRMqkqcH7EejMVx-y8osRwG8dUDy_2shNzzpYzosdVakNlCJ9tHldlIq2C6-q73H-giuOP0Acwj9C1Hw_C3CI7aJm77OrOm6HVMrT4PlDd1I6N9HGiIVDtjX5Af2JoHlCIHhjHXYOHUONKOoarVuUKcQhMbfmaUVPyrEhWbVelzrzPEm7D_CELXWnqKHHC3l6T2LBgNkjObrXsRijEHlJWWpH_gc3VCR_EKE-O0cTRm0YDlGqUyBInAlg5vexRgCwgOX5niJRJnKEv_DSZiYZZ2AhyIrg3yOqDegD79HCC1ykVACqZduBPm0PB753pdsoXTG_hROBLup8POznGixfGRoonHLpxdFhIHFNRmCWIjq1CocuH8zMIMWhDqbI633A11k5BKKSwDOCv6zVgU0zB5q5A7334fgv1hmf3OmkN8oN61OX6ZlVnEcaB2dd37BuWeZZS7N1iMVyJxSywGVil9eENLy3IRGbSCp5XcnBrv_IfTnS2-d7mOpLt9SJUVIHMl53cTdwrOzRBc39KtxpDUodgo3fup1Ksi3JoPP_=s1528-no?authuser=0" /> </a>
+          
+
+
+</body>
+</html>

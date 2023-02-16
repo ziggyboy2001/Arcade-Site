@@ -1,0 +1,269 @@
+body{
+    background-image: linear-gradient(
+        to right,
+        rgb(0, 0, 0),
+        rgb(31, 31, 31),
+        rgb(42, 42, 42),
+        rgb(51, 51, 51),
+        rgb(54, 54, 54),
+        rgb(20, 60, 39),
+        rgb(23, 92, 55),
+        rgb(0, 141, 66),
+        #10E07D
+      );
+      min-width: 509px;
+}
+table{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+td{
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(62, 62, 62);
+    background-image: radial-gradient(
+        rgb(62, 62, 62),
+        rgb(62, 62, 62),
+        rgb(62, 62, 62),
+        rgb(62, 62, 62),
+        rgb(62, 62, 62),
+        rgb(62, 62, 62),
+        rgb(62, 62, 62),
+        rgb(62, 62, 62),
+        rgb(62, 62, 62),
+        rgb(62, 62, 62),
+        #10E07D
+         );
+}
+td:hover{
+    background-image: #10E07D;
+}
+td:active{
+    box-shadow: inset 0px 0px 10px    #10E07D;
+    border: 1px solid black;
+    transform: border(0px);
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'MuseoModerno', cursive;
+    text-shadow: 0px 0px 5px    #10E07D;
+ }
+td {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    border: 3px solid black;
+    font-size: 80px;
+    font-family: 'MuseoModerno', cursive;
+    text-shadow: 0px 0px 5px    #10E07D;
+    box-shadow: 0px 0px 2px    #10E07D;
+    cursor: pointer;
+    animation-name: td;
+    animation-duration: 7s;
+ }
+ div{
+     display: flex;
+     justify-content: center;
+     margin-top: 20px;
+    }
+    #newGameBtn{
+        text-align: center;
+        background-color: #383838;
+        border:1px solid    #10E07D;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px   #10E07D;
+        color:   #10E07D;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    #newGameBtn:hover{
+        box-shadow: none;
+    }
+    #newGameBtn:active{
+        box-shadow: inset 0px 0px 10px    #10E07D;
+        border: 1px solid black;
+        transform: border(0px);
+    }
+    #computerBtn{
+        text-align: center;
+        background-color: #383838;
+        border:1px solid    #10E07D;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px   #10E07D;
+        color:   #10E07D;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    #computerBtn:hover{
+        box-shadow: none;
+    }
+    #computerBtn:active{
+        box-shadow: inset 0px 0px 10px    #10E07D;
+        border: 1px solid black;
+        transform: border(0px);
+    }
+    #computerBtn:visited{
+        text-decoration: none;
+        color:   #10E07D;
+
+    }
+    #newGameBtn{
+        text-decoration: none;
+        color:   #10E07D;
+
+    }
+    #playerOneName{
+        color:   #10E07D;
+        font-family: 'MuseoModerno', cursive;
+        font-size: large;
+        padding-left: 3px;
+        border: 2px solid#626262;
+        border-radius: 5px;
+        width: 200px;
+        cursor: pointer;
+    }
+    #playerOneName:hover{
+        box-shadow: inset 0px 0px 10px #626262;
+    }
+    #playerOneName:active{
+        box-shadow: inset 0px 0px 10px    #10E07D;
+        border: 2px solid   #10E07D;
+    }
+    #playerTwoName{
+        color:   #10E07D;
+        font-family: 'MuseoModerno', cursive;
+        font-size: large;
+        padding-left: 3px;
+        border: 2px solid#626262;
+        border-radius: 5px;
+        width: 200px;
+        cursor: pointer;
+    }
+    #playerTwoName:hover{
+        box-shadow: inset 0px 0px 10px #626262;
+    }
+    #playerTwoName:active{
+        box-shadow: inset 0px 0px 10px    #10E07D;
+        border: 2px solid   #10E07D;
+    }
+    #rules{
+        color:   #10E07D;
+        font-family: 'MuseoModerno', cursive;
+        text-align: center;
+        text-transform:uppercase;
+        text-shadow: 0px 0px 5px #383838;
+    }
+    .navBar {
+        position: absolute;
+        left: 10px;
+        top:30px;
+        color:    #10E07D;
+        width: fit-content;
+        display: inline-block;
+        text-align: center;
+        background-color: #383838;
+        border:1px solid    #10E07D;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px   #10E07D;
+        color:   #10E07D;
+        text-transform: uppercase;
+    }
+    .navBar a {
+        font-size: large;
+        font-family: 'MuseoModerno', cursive;
+        text-decoration: none;
+        color:    #10E07D;
+        border-radius: 5px;
+        padding-right: 2px;
+        padding-left: 2px;
+        cursor: pointer;
+    }
+    .navBar a:hover {
+        box-shadow: none;
+    }
+    .navBar:active{
+        box-shadow: inset 0px 0px 10px    #10E07D;
+        border: 1px solid black;
+        transform: border(0px);
+    }
+    .mountainImg {
+        height: 720px;
+        width: 720px;
+        position: relative;
+        z-index:-5;
+        bottom: 700px;
+        left: 0;
+        animation-name: mountain;
+        animation-duration: 10s;
+        animation-iteration-count: forwards;
+        
+    }
+    .moonImg {
+        height: 720px;
+        width: 720px;
+        position: absolute;
+        z-index:-5;
+        top: 200px;
+        left: 0px;
+        animation-name: moon;
+        animation-duration: 10s;
+        animation-iteration-count: forwards;
+        pointer-events: none;
+    }
+    .jacketImg{
+        height: 720px;
+        width: 720px;
+        position: absolute;
+        z-index:-5;
+        top: -5px;
+        left: 1000px;
+        animation-name: jacket;
+        animation-duration: 10s;
+        animation-iteration-count: forwards;
+        pointer-events: none;
+    }
+    .head2Img{
+        height: 720px;
+        width: 720px;
+        position: absolute;
+        z-index:-5;
+        top: -5px;
+        left: 1000px;
+        animation-name: head2;
+        animation-duration: 10s;
+        animation-iteration-count: forwards;
+        pointer-events: none;
+    }
+    .gogglesImg{
+        height: 720px;
+        width: 720px;
+        position: absolute;
+        z-index:-5;
+        top: -5px;
+        left: 1000px;
+        animation-name: goggles;
+        animation-duration: 10s;
+        animation-iteration-count: forwards;
+        pointer-events: none;
+    }
+    @keyframes moon {
+        0%   {top:0px;}
+        25%  {top:200px;}
+    }
+    @keyframes td{
+       0% {opacity: 0;}
+       100% {opacity: 1;}
+    }
+    @keyframes jacket {
+        0%   {top:0px;}
+        25%  {top:300px;}
+    }
+    @keyframes head2 {
+        25%  {left:800px;}  
+    }
+    @keyframes goggles {
+        0%   {top:0px;}
+        25%  {top:50px;}
+    }

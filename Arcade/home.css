@@ -1,0 +1,187 @@
+body{
+    background-color: black;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'MuseoModerno', cursive;
+    font-size: xx-large;
+    color: rgb(204, 204, 204);
+    text-shadow: 0px 0px 40px rgb(0, 255, 119);
+}
+
+.sideBox{
+    position: absolute;
+    right: 0;
+    top: 180px;
+    border-radius: 15px;
+    height: 650px;
+    width: 600px;
+    background-color: rgb(62, 62, 62);
+    box-shadow: 0px 0px 10px inset black;
+    margin-right: 80px;
+    margin-bottom: 10px;
+    animation-name: sideBox;
+    animation-duration: 2s;
+}
+.insetBox1{
+    position: absolute;
+    right: 50px;
+    border-radius: 15px;
+    height: 250px;
+    width: 500px;
+    background-color: rgb(62, 62, 62);
+    box-shadow: 0px 0px 10px inset black;
+}
+.insetBox1:active{
+    box-shadow: 0px 0px 1px inset black;
+}
+.insetBox2{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 15px;
+    height: 250px;
+    width: 500px;
+    background-color: rgb(62, 62, 62);
+    box-shadow: 0px 0px 10px inset black;
+}
+.insetBox2:active{
+    box-shadow: 0px 0px 1px inset black;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    font-family: 'MuseoModerno', cursive;
+    color: rgb(108, 108, 108);
+    text-shadow: 0px 0px 10px black;
+}
+.sideBoxH2{
+    color: rgb(108, 108, 108);
+    font-family: 'MuseoModerno', cursive;
+    display: flex;
+    justify-content: center;
+    text-shadow:  0px 0px 5px black;;
+}
+
+
+
+
+.parentOfImages{
+    position: relative;
+    top: 15%;
+    left: 5%;
+    animation-name: example;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    pointer-events: none;
+
+}
+
+@keyframes mountain {
+  0%   {left:300px;}
+  25%  {left:200px;}
+}
+@keyframes moon {
+    0%   {top:0px;}
+    25%  {top:200px;}
+}
+  @keyframes body {
+    0%   {left: 500px;}
+    25%  {top:200px;}  
+}
+  @keyframes head {
+    0%   {left:100px;}
+    25%  {left:200px;}  
+}
+  @keyframes hat {
+    0%   {left:400px;}
+    25%  {left:200px;} 
+ }
+ @keyframes sideBox{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+ .ticTacToeImg{
+    position: absolute;
+    top:135px;
+    right:37%;
+    height: 150px;
+    pointer-events: none;
+ }
+ .snakeImg{
+    position: absolute;
+    top:410px;
+    right:34%;
+    height: 180px;
+    pointer-events: none;
+ }
+  .mountainImg {
+    height: 720px;
+    width: 720px;
+    position: relative;
+    top: 0;
+    left: 0;
+    animation-name: mountain;
+    animation-duration: 10s;
+    animation-iteration-count: forwards;
+    
+  }
+  .moonImg {
+    height: 720px;
+    width: 720px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-name: moon;
+    animation-duration: 10s;
+    animation-iteration-count: forwards;
+    pointer-events: none;
+
+
+  }
+  .bodyImg {
+    height: 720px;
+    width: 720px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-name: body;
+    animation-duration: 10s;
+    animation-iteration-count: forwards;
+    pointer-events: none;
+
+
+  }
+  .headImg {
+    height: 720px;
+    width: 720px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-name: head;
+    animation-duration: 10s;
+    animation-iteration-count: forwards;
+    pointer-events: none;
+
+
+  }
+  .hatImg {
+    height: 720px;
+    width: 720px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-name: hat;
+    animation-duration: 10s;
+    animation-iteration-count: forwards;
+        pointer-events: none;
+
+
+  }
+
+  @media screen and (max-width: 750px){
+    .sideBox{
+        display: none;
+    }
+}
